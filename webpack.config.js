@@ -18,9 +18,9 @@ module.exports = {
     extensions: [".ts", ".js"]
   },
   output: {
-    filename: "qtum.js",
+    filename: "revo.js",
     path: path.resolve(__dirname, "dist"),
-    library: "Qtum",
+    library: "Revo",
     libraryTarget: "umd"
   }
 };

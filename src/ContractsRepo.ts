@@ -1,6 +1,6 @@
 import { IContractInfo, Contract } from "./Contract"
 import { IABIMethod } from "./ethjs-abi"
-import { QtumRPC } from "./QtumRPC"
+import { RevoRPC } from "./RevoRPC"
 import { ContractLogDecoder } from "./abi"
 import { EventListener } from "./EventListener"
 
@@ -47,7 +47,7 @@ export class ContractsRepo {
    */
   public logDecoder: ContractLogDecoder
 
-  constructor(private rpc: QtumRPC, private repoData: IContractsRepoData) {
+  constructor(private rpc: RevoRPC, private repoData: IContractsRepoData) {
     const eventABIs = this.allEventABIs()
     this.logDecoder = new ContractLogDecoder(eventABIs)
   }

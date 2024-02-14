@@ -1,14 +1,14 @@
-import { QtumRPC } from "./QtumRPC"
+import { RevoRPC } from "./RevoRPC"
 import { IContractsRepoData, ContractsRepo } from "./ContractsRepo"
 import { Contract, IContractInfo } from "./Contract"
 
 /**
- * The `Qtum` class is an instance of the `qtumjs` API.
+ * The `Revo` class is an instance of the `revojs` API.
  *
- * @param providerURL URL of the qtumd RPC service.
+ * @param providerURL URL of the revod RPC service.
  * @param repoData Information about Solidity contracts.
  */
-export class Qtum extends QtumRPC {
+export class Revo extends RevoRPC {
   private repo: ContractsRepo
 
   constructor(providerURL: string, repoData?: IContractsRepoData) {

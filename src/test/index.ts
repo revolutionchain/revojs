@@ -1,10 +1,10 @@
 import { assert } from "chai"
 
-import { QtumRPC } from "../QtumRPC"
+import { RevoRPC } from "../RevoRPC"
 
-export const rpcURL = process.env.QTUM_RPC || "http://qtum:test@localhost:3889"
+export const rpcURL = process.env.REVO_RPC || "http://revo:test@localhost:3889"
 
-export const rpc = new QtumRPC(rpcURL)
+export const rpc = new RevoRPC(rpcURL)
 
 export const repoData = require("../../solar.development.json")
 
